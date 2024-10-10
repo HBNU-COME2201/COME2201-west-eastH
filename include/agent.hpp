@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include "definition.hpp"
+#include <string>
 
 class CAgent
 {
@@ -21,6 +22,8 @@ public:
     virtual double getSpeed() const;
     virtual double getHeading() const;
     virtual double getRange() const;
+
+	virtual std::string to_string() const;
 
 private:
     unsigned long m_agent_id;
